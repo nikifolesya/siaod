@@ -15,7 +15,7 @@ c = []
 for i in range(1, n + 1):
     a.insert(0, i)
 
-def move(x, y):
+def step(x, y):
     if len(x) == 0 and len(y) == 0:
         return
     elif len(x) == 0 and len(y) > 0:
@@ -29,16 +29,16 @@ def move(x, y):
 
 if n % 2 == 0:
     while len(c) != n:
-        move(a, b)
-        move(a, c)
-        move(b, c)
+        step(a, b)
+        step(a, c)
+        step(b, c)
         
 else: 
     while len(c) != n:
-        move(a, c)
+        step(a, c)
         if len(c) == n:
             break
-        move(a, b)
+        step(a, b)
 
 print(a)
 print(b)
