@@ -6,7 +6,7 @@
 # - для промежуточного хранения можно использовать стержень В.
 # Реализовать алгоритм, используя три стека вместо стержней А, В, С. Информация о дисках хранится в исходном файле.
 
-n = 3
+n = 7
     
 a = []
 b = []
@@ -16,7 +16,9 @@ for i in range(1, n + 1):
     a.insert(0, i)
 
 def move(x, y):
-    if len(x) == 0 and len(y) > 0:
+    if len(x) == 0 and len(y) == 0:
+        return
+    elif len(x) == 0 and len(y) > 0:
         x.append(y.pop())
     elif len(y) == 0 and len(x) > 0:
         y.append(x.pop())
@@ -34,13 +36,11 @@ if n % 2 == 0:
 else: 
     while len(c) != n:
         move(a, c)
+        if len(c) == n:
+            break
         move(a, b)
-        move(b, c)
 
-while len(c) != 0:
-    print(c.pop())
-
-# print(a)
-# print(b)
-# print(c)
+print(a)
+print(b)
+print(c)
 
