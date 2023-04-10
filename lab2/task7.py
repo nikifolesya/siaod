@@ -1,7 +1,7 @@
 # Дан файл из целых чисел. Используя дек, за один просмотр файла напечатать сначала все отрицательные числа, 
 # затем все положительные числа, сохраняя исходный порядок в каждой группе.
 
-with open("/Users/nikiforova.olesya/Desktop/сиаод/lab2/task7.txt") as f:
+with open("/Users/nikiforova.olesya/Desktop/сиаод/lab2/txt/task7.txt") as f:
     arr = f.read().split()
 
 d = []

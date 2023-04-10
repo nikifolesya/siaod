@@ -1,7 +1,7 @@
 # Дан текстовый файл с программой на алгоритмическом языке. 
 # За один просмотр файла проверить баланс круглых скобок в тексте, используя стек.
 
-with open("/Users/nikiforova.olesya/Desktop/сиаод/lab2/task4.txt") as f:
+with open("/Users/nikiforova.olesya/Desktop/сиаод/lab2/txt/task4.txt") as f:
     str = f.read()
 
 st = []

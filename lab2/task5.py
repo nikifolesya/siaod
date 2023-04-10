@@ -1,7 +1,7 @@
 # Дан текстовый файл с программой на алгоритмическом языке. 
 # За один просмотр файла проверить баланс квадратных скобок в тексте, используя дек.
 
-with open("/Users/nikiforova.olesya/Desktop/сиаод/lab2/task5.txt") as f:
+with open("/Users/nikiforova.olesya/Desktop/сиаод/lab2/txt/task5.txt") as f:
     str = f.read()
 
 d = []

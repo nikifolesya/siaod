@@ -2,7 +2,7 @@
 # Пользуясь деком, расшифровать текст. 
 # Известно, что при шифровке каждый символ сообщения заменялся следующим за ним в деке по часовой стрелке через один.
 
-with open("/Users/nikiforova.olesya/Desktop/сиаод/lab2/task2.txt") as f:
+with open("/Users/nikiforova.olesya/Desktop/сиаод/lab2/txt/task2.txt") as f:
     str = f.read()
     
 d = []

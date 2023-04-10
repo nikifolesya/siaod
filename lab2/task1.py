@@ -12,7 +12,7 @@
 # def popleft(arr):
 #     arr.pop(0)
 
-with open("/Users/nikiforova.olesya/Desktop/сиаод/lab2/task1.txt") as f:
+with open("/Users/nikiforova.olesya/Desktop/сиаод/lab2/txt/task1.txt") as f:
     arr = f.read().split("\n")
 
 # print(arr)
