@@ -8,12 +8,18 @@
 
 n = 7
     
+arr = []    
+
 a = []
 b = []
 c = []
 
 for i in range(1, n + 1):
-    a.insert(0, i)
+    arr.insert(0, i)
+    
+while len(arr) != 0:
+    a.append(arr[-1])
+    arr.pop()
 
 def step(x, y):
     if len(x) == 0 and len(y) == 0:

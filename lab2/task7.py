@@ -6,12 +6,10 @@ with open("/Users/nikiforova.olesya/Desktop/сиаод/lab2/txt/task7.txt") as f
 
 d = []
 
-while len(arr) != 0:
-    if int(arr[0]) >= 0:
-        d.append(arr[0])
-        arr.pop(0)
+for i in range(len(arr)):
+    if int(arr[i]) >= 0:
+        d.append(arr[i])
     else:
-        d.insert(0, arr[0])
-        arr.pop(0)
+        d.insert(0, arr[i])
 
 print(*d, sep=" ")
