@@ -8,9 +8,9 @@ st = []
 fl = True
 
 for i in str:
-    if i in '(':
+    if i == '(':
         st.append(i)
-    elif i in ')':
+    elif i == ')':
         if len(st) == 0:
             fl = False
             break
